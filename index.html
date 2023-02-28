@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <img src="./imgs/balloon.jpg" alt="balloon">
+            <h1 class="heading">WELCOME</h1>
+        </div>
+        <div class="form-content">
+            <div class="text">
+                "Experience the world like never before with DREAM ESCAPES. Our passion for travel and expertise in creating unforgettable experiences will take you on a journey of a lifetime."
+            </div>
+            <form action="#">
+                <fieldset>
+                    <legend>Unlock the beauty of the world with us!</legend>
+                    <div>
+                        <label for="fname">FIRST NAME *</label>
+                        <input type="text" id="fname" name="first-name" required>
+                    </div>
+                    <div>
+                        <label for="lname">LAST NAME *</label>
+                        <input type="text" id="name" name="last-name" required>
+                    </div>
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div>
+                        <label for="phone">PHONE</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div>
+                        <label for="password">PASSWORD</label>
+                        <input class="password" type="password" minlength="8" placeholder="min 8 characters" id="password" name="password">
+                    </div>
+                    <div>
+                        <label for="c-password">CONFIRM PASSWORD</label>
+                        <input class="confirm-password" type="password" minlength="8" placeholder="min 8 characters" id="c-password" name="confirm-password">
+                    </div>
+                    <div class="input-wrapper">
+                        <button onclick="checkPasword ()">Create Account</button>
+                        <p>Already have an account? <a href="#">Log in</a></p>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
